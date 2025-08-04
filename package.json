@@ -1,5 +1,6 @@
+
 {
- 
+  
   "//1": "describes your app and its dependencies",
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
@@ -30,3 +31,4 @@
   ],
   "license": "MIT"
 }
+
