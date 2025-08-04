@@ -4,6 +4,11 @@ const bodyParser  = require('body-parser');
 const fccTesting  = require('./freeCodeCamp/fcctesting.js');
 const app         = express();
 const bcrypt      =require('bcrypt');
+async function hashPassword(password) {
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+        return hashedPassword;
+}
 fccTesting(app);
 const saltRounds = 12;
 const myPlaintextPassword = 'sUperpassw0rd!';
