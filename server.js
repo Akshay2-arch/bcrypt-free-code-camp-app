@@ -3,7 +3,6 @@ const express     = require('express');
 const bodyParser  = require('body-parser');
 const fccTesting  = require('./freeCodeCamp/fcctesting.js');
 const app         = express();
-import bcrypt from 'bcrypt';
 const bcrypt      =require('bcrypt');
 fccTesting(app);
 const saltRounds = 12;
